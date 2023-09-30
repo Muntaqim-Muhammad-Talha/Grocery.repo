@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart's</title>
+    <script src="https://kit.fontawesome.com/3f6e272763.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+        }
+        body{
+            background-color: #f7f7f7;
+            text-align: left;
+            line-height: 38px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .coupon-input{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .coupon-input input{
+            width: 200px;
+            height: 20px;
+            padding: 18px;
+            border: none;
+            outline: none;
+        }
+        .coupon-input button{
+            cursor: pointer;
+            background-color: #29AB87;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .coupon-input button:hover{
+            opacity: 80%;
+        }
+        .ol-cart{
+            padding: 0 28px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #29AB87;
+        }
+        .ol-cart li{
+            font-weight: 600;
+        }
+        footer p > span{
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="coupon-input">
+            <input type="text" placeholder="Your coupon code...">
+            <button class="btn-coupon"><i class="fa-solid fa-tag"></i></button>
+        </div>
+    </header>
+    <main>
+        <ol class="ol-cart">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Pin-Apple</li>
+            <li>Water-Melon</li>
+            <li>Bingle</li>
+        </ol>
+    </main>
+    <footer>
+        <p>Total : <span>$00</span></p>
+        <p>Discounts : <span>$00</span></p>
+        <p>Grand Total : <span>$000</span></p>
+    </footer>
+</body>
+</html>
